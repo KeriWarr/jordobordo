@@ -30,10 +30,18 @@ var main = function() {
 
   function handleText(textNode) {
     var v = textNode.nodeValue;
-    v = v.replace(/[aeiou]/g, "o");
-    v = v.replace(/[AEIOU]/g, "O");
+    data.forEach(function(val, index){
+        v = v.replace(new RegExp(val.regex, "g"), val.replace);
+    });
     textNode.nodeValue = v;
   }
 };
 
-main();
+var data;
+
+chrome.storage.sync.get({
+    items: [{"regex":"[aeiou]","replace":"o"},{"regex":"[AEIOU]","replace":"O"}] 
+}, function(d) {
+    data = d.items;
+    main();
+});

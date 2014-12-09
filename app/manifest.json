@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Jordobordo",
-	"version": "0.1",
+	"version": "0.2",
 	"description": "Replaces all vowels with the letter 'o' in Chrome",
 	"content_scripts": 
 	[
@@ -10,6 +10,10 @@
 			"js": ["content_script.js"],
 			"run_at": "document_end"
 		}
-	]
+	],
+	"permissions": [
+		"storage"
+	],
+	"options_page": "options.html"
 }
 
