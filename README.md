@@ -1,12 +1,10 @@
 # hack-to-stack
-### by [Elvin Yung](https://github.com/elvinyung)
+### by [Keri Warr](https://github.com/keriwarr)
 
 ## Description
-Turns all instances of `hack` into `stack` in Chrome. You asked for this.
+Replaces all vowels with the letter o
 
-Vaguely stolen from [cloud-to-butt](https://github.com/panicsteve/cloud-to-butt).
+Vaguely stolen from [hack-to-stack](https://github.com/elvinyung/hack-to-stack).
 
 ## Instructions
-Install from [Chrome App Store](https://chrome.google.com/webstore/detail/hack-to-stack/akigalajcdgbiphkpdpfoiikdhbhfend)!
-
-Or just get crx file from this repo and install it.
+just get crx file from this repo and install it.
