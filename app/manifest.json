@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "Hack to Stack",
+	"name": "Jordobordo",
 	"version": "0.1",
-	"description": "Turns all instances of 'hack' into 'stack' in Chrome.",
+	"description": "Replaces all vowels with the letter 'o' in Chrome",
 	"content_scripts": 
 	[
 		{

@@ -30,8 +30,8 @@ var main = function() {
 
   function handleText(textNode) {
     var v = textNode.nodeValue;
-    v = v.replace(/hack/g, "stack");
-    v = v.replace(/Hack/g, "Stack");
+    v = v.replace(/[aeiou]/g, "o");
+    v = v.replace(/[AEIOU]/g, "O");
     textNode.nodeValue = v;
   }
 };
