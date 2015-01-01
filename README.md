@@ -12,4 +12,4 @@ Inspired by this bloke: [Jordan Verasmay](https://github.com/jordanverasamy)
 Install from [Chrome App Store!](https://chrome.google.com/webstore/detail/jordobordo/nfgjijmjfoflnlpocdodcnhbplecnick)
 Or just get crx file from this repo and install it.
 
-Visit the options page from the extension manager in order to add new regexes
+Visit the options page from the extension manager in order to customize the search and replace regexes

@@ -31,7 +31,8 @@ var main = function() {
   function handleText(textNode) {
     var v = textNode.nodeValue;
     data.forEach(function(val, index){
-        v = v.replace(new RegExp(val.regex, "g"), val.replace);
+      var chance = Math.random();
+      if(chance < val.frequency) {v = v.replace(new RegExp(val.regex, "g"), val.replace);}
     });
     textNode.nodeValue = v;
   }
@@ -40,8 +41,8 @@ var main = function() {
 var data;
 
 chrome.storage.sync.get({
-    items: [{"regex":"[aeiou]","replace":"o"},{"regex":"[AEIOU]","replace":"O"}] 
+  items: [{"regex":"[aeiou]","replace":"o","frequency":"1"},{"regex":"[AEIOU]","replace":"O","frequency":"1"}] 
 }, function(d) {
-    data = d.items;
-    main();
+  data = d.items;
+  main();
 });
